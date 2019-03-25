@@ -1,0 +1,46 @@
+/********************************************************************
+** Author: Riley Kraft
+** Date: 03/04/2018
+** Description: This is the style page for features specific to the
+				about page.
+*********************************************************************/
+
+.about-header{
+	padding: 1% 4% 1% 4%;
+  	text-decoration: none;
+  	font-size: 30px;
+  	color: #818181;
+  	display: block;
+  	border: none;
+  	background: none;
+  	text-align: left;
+}
+
+.about-text{
+	padding: 1% 8% 1% 8%;
+  	text-decoration: none;
+  	font-size: 16px;
+  	display: block;
+  	border: none;
+  	background: none;
+  	text-align: left;
+}
+
+ul {
+	padding: 0% 16% 0% 16%;
+  	font-size: 16px;
+  	color: #818181;
+  	display: block;
+  	border: none;
+  	background: none;
+  	text-align: left;
+  	float: left;
+}
+
+iframe {
+	padding: 0px 1% 0px 1%;
+	width: 47.75%;
+	height: 315px;
+	border: none;
+	float: center;
+}
