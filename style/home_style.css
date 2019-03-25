@@ -1,0 +1,63 @@
+/********************************************************************
+** Author: Riley Kraft
+** Date: 03/04/2018
+** Description: This is the style page for features specific to the
+				home page.
+** Resources:
+		Source code for photo gradient
+			https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images
+		Source code for photo carousel and fade in and out on change
+			https://www.w3schools.com/w3css/w3css_slideshow.asp
+			https://www.w3schools.com/howto/howto_js_slideshow.asp
+			https://codepen.io/danielguillan/pen/duiAq
+			http://www.the-art-of-web.com/css/fading-slideshow-no-jquery/
+*********************************************************************/
+
+#feature::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #292E37 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
+
+.carousel{
+	height: 100%;
+	width: 100%;
+	border: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.social-media{
+	height: 50px;
+	background-color: transparent;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	width: 97.25%;
+	margin: 0.5%;
+}
+
+.links{
+	height: 50px;
+	width: 50px;
+	float: center;
+	padding: 0px 5% 0px 5%;
+}

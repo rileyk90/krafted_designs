@@ -1,0 +1,82 @@
+/********************************************************************
+** Author: Riley Kraft
+** Date: 03/04/2018
+** Description: This is the main style page for all html files for 
+				this website. This file handles the structure and
+				theme for the entire website.
+*********************************************************************/
+
+*{
+	font-family: Georgia, Times, serif;
+	color: white;
+	background-color: #292E37;
+}
+
+#header{
+	background: url("logo.png") no-repeat left top;
+	background-size: 65px 65px;
+	border-bottom: 1px white solid.
+}
+
+h1{
+	text-align: left;
+	padding: 25px 0px 0px 25px;
+	background-color: transparent;
+	text-shadow: 0 0 5px black;
+}
+
+#nav{
+	margin: 0.5%;
+	text-align: right;
+	font-size: 12px;
+	padding: 2px 15px 0px 0px;
+}
+
+a{
+	text-decoration: none;
+	padding: 15px 15px;
+}
+
+#nav-bar{
+	height: 0px;
+	width: 97.75%;
+	margin-left: 0.5%;
+	padding: 0px 15px 15px 0px;
+	border-bottom: 1px white solid;
+}
+
+#content{
+	height: 100%;
+}
+
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#feature{
+	margin: 0.5%;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+}
+
+#footer{
+	margin: 0.5%;
+	text-align: right;
+	font-size: 12px;
+	background-color: transparent;
+	margin-top: 0.5%;
+	padding: 10px 30px 5px 0px;
+}
+
+#sources{
+	font-size: 12px;
+	text-align: left;
+	background-color: transparent;
+}
+
+.source-label{
+		font-size:14px; 
+		text-decoration:underline;
+	}
+}

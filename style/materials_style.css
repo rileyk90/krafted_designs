@@ -1,0 +1,97 @@
+/********************************************************************
+** Author: Riley Kraft
+** Date: 03/04/2018
+** Description: This is the style page for features specific to the
+				materials page.
+** Resources:
+		Source code for sidenav and dropdown buttons
+			https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp
+		Source code for iframe style
+			https://www.thoughtco.com/iframes-and-css-3468669
+*********************************************************************/
+
+#content{
+	overflow: auto;
+}
+
+.materials-header{
+	padding: 1% 4% 1% 4%;
+  	text-decoration: none;
+  	font-size: 30px;
+  	color: #818181;
+  	display: block;
+  	border: none;
+  	background: none;
+  	text-align: left;
+}
+
+.materials-description{
+	padding: 1% 8% 1% 8%;
+  	text-decoration: none;
+  	font-size: 16px;
+  	display: block;
+  	border: none;
+  	background: none;
+  	text-align: left;
+}
+
+.sidenav {
+	float: left;
+	margin-left: 1%;
+  	height: 390px;
+  	width: 19%;
+  	padding-top: 2%;
+  	padding-bottom: 2%;
+  	background-color: #111;
+  	border: 5px outset #111;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.active {
+  background-color: teal;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+#scroll-box{
+	margin-right: 0.5%;
+	padding: 2% 2% 2% 2%;
+	height: 390px;
+	width: 73%;
+	border:5px inset #111;
+	font: 16px;
+	float: left;
+	background-color: white;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+  	border: none;
+  	overflow: auto;
+  	background-color: white;
+}
