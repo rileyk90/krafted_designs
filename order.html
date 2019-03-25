@@ -1,0 +1,108 @@
+<!-----------------------------------------------------------------------------------------
+-- Author: Riley Kraft
+-- Date: 03/04/2018
+-- Description: The order page features the order form for customers to send in requests
+				for their custom products. Customers must input text, numbers, even a file
+				in order to complete the order form. If the customer chooses not to submit
+				their order online, they can download the order form via the link below the
+				submit button.
+------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Krafted Designs - order</title>
+		<link rel = "stylesheet" href= "style/style.css" type = "text/css"/>
+		<link rel = "stylesheet" href= "style/order_style.css" type = "text/css"/>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Krafted Designs</h1>
+				<div id="nav">
+					<a href="home.html">home</a> | <a href="about.html">about</a> | <a href="materials.html">materials</a> | <a href="#">order</a>
+				</div>
+				<div id="nav-bar"></div>
+		</div>
+		<div id="content">
+			<div id="feature">
+				<form action="" method="post" name="post data">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<p>
+							<label>First Name <input type="text" id="first_name" size="40"/></label>
+							<label>Last Name <input type="text" id="last_name" size="40"/></label>
+						</p> 
+						<p>
+							<label>Address <input type="text" id="address" size="80"/></label>
+						</p>
+						<p>
+							<label>City <input type="text" id="city" size="20"/></label>
+							<label>State <input type="text" id="state" maxlength="2" size="5"/></label>
+							<label>Zip <input type="text" id="zip" maxlength = "5" size="10"/></label>
+						</p> 
+						<p>
+							<label>Phone <input type="text" id="phone" maxlength="10" size="20"/></label>
+							<label>Email <input type="text" id="email" size="40"/></label>
+						</p> 
+					</fieldset>
+					<fieldset>
+						<legend>Order Specifications</legend>
+						<p>
+							<label>Lumber</label>
+				    	  	<input type="checkbox" id="maple">Maple
+  							<input type="checkbox" id="sapele">Sapele
+  							<input type="checkbox" id="walnut">Walnut
+  							<input type="checkbox" id="bubinga">Bubinga
+  							<input type="checkbox" id="purpleheart">Purpleheart
+				    	 </p>
+						<p>
+							<label>Shape</label>
+				    	  	<input type="radio" id="shape" value="squared" checked>Squared
+  							<input type="radio" id="shape" value="rounded">Rounded
+  							<input type="radio" id="shape" value="other">Other
+				    	 </p>
+				    	 <p>
+							<label>Size</label>
+							Width(inches) <input type="number" id="width">
+				    	  	Height(inches) <input type="number" id="height">
+				    	 </p>
+						<p>
+							<label>Thickness</label>
+				    	  	<input type="radio" id="thickness" value="cutting board" checked> Cutting Board
+  							<input type="radio" id="thickness" value="butcher block"> Butcher Block
+				    	 </p> 
+				    	 <p>
+							<label>Feet</label>
+				    	  	<input type="radio" id="feet" value="clear" checked> Clear
+  							<input type="radio" id="feet" value="white"> White
+  							<input type="radio" id="feet" value="black"> Black
+				    	 </p> 
+				    	 <p>
+							<label>Hand Holds</label>
+				    	  	<input type="radio" id="hand-holds" value="yes" checked> Yes
+  							<input type="radio" id="hand-holds" value="no"> No
+				    	 </p>
+				    	 <p>
+				    	 	<label>Engraving</label>
+  								<input type="file" id="engraving" accept="image/*">
+						</p>
+						<p>
+				    	 	<label>Additional Details</label><br>
+				    	 	<textarea id="details" rows="4" cols="50"></textarea>
+				    	 </p>
+					</fieldset>
+					<div style="text-align:center">
+						<input name="urlPost" id="submit" type="submit" value="Submit" style="background-color:white">
+					</div>
+				</form>
+			</div>
+		</div>
+		<a href="files/order_form.pdf" download>download order_form.pdf</a>
+		<img class="icon" src="images/pdf_icon.png" alt="pdf_icon">
+		<div id="footer">
+			<p>Copyright &copy; Krafted Designs 2018</p>
+		</div>
+		<script src="javascript/order_script.js"> </script>
+	</body>
+</html>
